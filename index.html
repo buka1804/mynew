@@ -282,13 +282,25 @@
 					<div class="col-md-6 col-md-offset-1 contact-form">
 						<h3>пишите нам про горы</h3>
 
-						<form class="form">
-							<input class="name" type="text" placeholder="имя">
-							<input class="email" type="email" placeholder="email">
-							<input class="phone" type="text" placeholder="телефон:">
-							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="горы это ведь хорошо?"></textarea>
-							<input class="submit-btn" type="submit" value="отправить">
-						</form>
+						<form id="myform">
+<label>ваше имя</label>
+<input type="text" name="from_name" />
+<label>расскажите о горах</label>
+<input type="text" name="message_html" />
+<br><br>
+<button>
+Send
+</button>
+</form>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_Re59guUW9HGmbEfAxwgZV");
+   })();
+</script>
 					</div>
 				</div>
 			</div>
