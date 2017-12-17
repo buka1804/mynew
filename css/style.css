@@ -124,22 +124,18 @@ li a.active {
     font-weight: bold;
     margin-top: 0;
 }
-.carousel-caption button {
-    width: 170px;
-    height: 50px;
-    background: #3a9ecb;
-    color: #fff;
-    font-size: 25px;
-    text-transform: uppercase;
-    border: 0;
-    transition: all .5s ease 0s;
-    -webkit-transition: all .5s ease 0s;
-    -moz-transition: all .5s ease 0s;
-    -o-transition: all .5s ease 0s;
-    -ms-transition: all .5s ease 0s;
+.carousel-caption a {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #3a9ecb; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
 }
-.carousel-caption button:hover {
-    background: #2a2a2a;
+a.knopka:hover { background: #2a2a2a; } /* при наведении курсора мышки */
+a.knopka:active { background: #ADD7E6; } /* при нажатии */
+
+
 }
 .carousel-control {
     width: 5%;
