@@ -101,14 +101,14 @@ myform.submit(function(event){
   var service_id = "default_service";
 
   var template_id = "template_APPfFqWl";
-  myform.find("button").text("Sending...");
+  myform.find("button").text("отправка...");
   emailjs.send(service_id,template_id,params)
   	.then(function(){
-       alert("Sent!");
-       myform.find("button").text("Send");
+       alert("ура! отправлено!");
+       myform.find("button").text("отправить");
      }, function(err) {
-       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Send");
+       alert("ошибка\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("отправить");
     });
   return false;
 });
